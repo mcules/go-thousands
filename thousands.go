@@ -58,6 +58,9 @@ func Separate(N interface{}, lang ...string) (string, error) {
 		}
 
 		if dec != "" {
+			if len(dec) == 1 {
+				dec = dec . "0"
+			}
 			n = n + "," + dec
 		}
 
@@ -92,6 +95,9 @@ func Separate(N interface{}, lang ...string) (string, error) {
 		}
 
 		if dec != "" {
+			if len(dec) == 1 {
+				dec = dec . "0"
+			}
 			n = n + "." + dec
 		}
 
